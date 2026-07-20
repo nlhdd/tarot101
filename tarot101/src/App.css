@@ -1,0 +1,5 @@
+.card {
+  width: 200px;
+  height: auto;
+  image-rendering: pixelated;   /* garde le pixel-art net en grand */
+}
