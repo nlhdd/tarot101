@@ -41,14 +41,14 @@ const App = () => {
     const randomIndex = Math.floor(Math.random() * cards.length);
     setDrawnIndex(randomIndex);
   };
-let cardImage = "/cards/back.png";
+let cardImage = `${import.meta.env.BASE_URL}cards/back.png`;
 let cardAlt = "Back of the card";
 let description = "";
 let buttonText = "Read";
 let buttonAction = drawCard;
 
 if (drawnIndex !== null) {
-  cardImage = `/cards/${drawnIndex}.png`;
+  cardImage = `${import.meta.env.BASE_URL}cards/${drawnIndex}.png`;
   cardAlt = cards[drawnIndex];
   description = descriptions[drawnIndex];
   buttonText = "Retry";

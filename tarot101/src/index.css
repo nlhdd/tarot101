@@ -6,7 +6,7 @@
 
 html, body {
   width: 100%;
-  overflow-x: hidden;   /* 👈 tue les bandes blanches sur les côtés */
+  overflow-x: hidden;   
 }
 
 #root {
